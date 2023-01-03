@@ -1,4 +1,16 @@
 
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "msa-1"
+
+    workspaces {
+      name = "aws_terraform"
+    }
+  }
+}
+
+
 provider "aws" {
   region = "us-west-2"
   access_key = "$(var.AWS_ACCESS_KEY}"
