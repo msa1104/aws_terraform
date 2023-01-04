@@ -1,7 +1,7 @@
 
-provider "aws" {
-  region = var.region
-}
+# provider "aws" {
+#   region = var.region
+# }
 
 resource "aws_cloudwatch_dashboard" "dsahboard1" {
 

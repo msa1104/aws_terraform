@@ -1,5 +1,4 @@
 terraform {
-
   cloud {
     organization = "msa-1"
 
