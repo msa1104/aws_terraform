@@ -1,20 +1,5 @@
 
-terraform {
-  cloud {
-    organization = "msa-1"
 
-    workspaces {
-      name = "aws_terraform"
-    }
-  }
-}
-
-
-provider "aws" {
-  # region = "us-west-2"
-  # access_key = "$(var.AWS_ACCESS_KEY}"
-  # secret_key = "$(var.AWS_SECRET_KEY}"
-}
 
 resource "aws_cloudwatch_dashboard" "dsahboard1" {
 
