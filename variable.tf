@@ -1,11 +1,4 @@
-
-variable "AWS_ACCESS_KEY" {
-  type = string
-  default = null
+variable "region" {
+  description = "AWS region"
+  default     = "us-west-1"
 }
-
-variable "AWS_SECRET_KEY" {
-  type = string
-  default = null
-}
-
